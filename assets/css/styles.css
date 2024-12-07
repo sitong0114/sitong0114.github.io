@@ -1,0 +1,519 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;400;500;600;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* https://coolors.co/ffde66-6eb34d-36558f-1d2330-fdfdfd */
+/* https://mycolor.space/gradient?ori=to+right+bottom&hex=%2336558F&hex2=%236BB34D&sub=1 */
+
+/* START - Global */
+html {
+    scroll-behavior: smooth;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.section-padding {
+    padding-top: 5rem;
+    margin-top: -4rem;
+    padding-bottom: 2.5rem;
+}
+
+body {
+    overflow: overlay;
+}
+
+::-webkit-scrollbar {
+    width: .5rem;
+    background: #1d2330;
+}
+
+::-webkit-scrollbar-track {
+    background: #fff1;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: .2rem;
+    background: #20c997;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #fff;
+}
+
+.reset-a, .reset-a:hover, .reset-a:visited, .reset-a:focus, .reset-a:active  {
+    text-decoration: none;
+    color: inherit;
+    outline: 0;
+}
+/* END - Global */
+
+/* START - Canvas background */
+#qfux {
+    position: fixed;
+    left:0;
+    top:0;
+    z-index:-1;
+    background-blend-mode: screen;
+}
+/* END - Canvas background */
+
+/* START - Body */
+#DWQo {
+    background: #43cea2;
+    background: -webkit-linear-gradient(to left top, #43cea2, #185a9d);
+    background: linear-gradient(to left top, #43cea2, #185a9d);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 95vh;
+    background-attachment: fixed;
+}
+/* END - Body */
+
+/* START - NavBar */
+.navbar-bg {
+    background-color: #1d2330;
+}
+
+.navbar-a, .navbar-fg, .navbar-a:active, .navbar-fg:active, .navbar-a-active:active {
+    color: #fdfdfd;
+}
+
+.navbar-a:hover, .navbar-fg:hover {
+    color: #fdfdfd;
+    transform: translateY(-0.05rem) scale(1.01);
+    transition: transform .1s;
+}
+
+.navbar-a-active:hover {
+    color: #20c997;
+    transform: translateY(-0.05rem) scale(1.01);
+    transition: transform .1s;
+}
+
+.navbar-a-active {
+    color: #20c997;
+}
+/* END - NavBar */
+
+/* START - Fonts */
+.font-serif {
+    font-family: 'Roboto Slab', serif;
+}
+
+.font-sans {
+    font-family: 'Work Sans', sans-serif;
+}
+
+.font-digital {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 70%;
+}
+
+.white-text {
+    color: #FFF;
+}
+
+.center-text {
+    text-align: center;
+}
+/* END - Fonts */
+
+/* START - Other */
+.divider {
+    background-color: #FFF4;
+}
+/* END - Other */
+
+
+/* START - Home */
+.intro {
+    padding-top: 2.5rem;
+    margin-top: 2.5rem;
+    padding-bottom: 1.5rem;
+    margin-bottom: 2.5rem;
+    background: #FFF4;
+    border-radius: .5rem;
+}
+
+.dp-img {
+    width:12rem;
+    height:12rem;
+    border-radius: 6rem 6rem 6rem 6rem;
+}
+
+@keyframes scroller {
+    0%      {top: -2rem}
+    25%     {top: 0rem}
+    50%     {top: 2rem}
+    100%    {top: 2rem}
+}
+@-webkit-keyframes scroller {
+    0%      {top: -2rem}
+    25%     {top: 0rem}
+    50%     {top: 2rem}
+    100%    {top: 2rem}
+}
+
+.subtitle {
+    position: absolute;
+    top: -2rem;
+    animation: scroller 10s ease-in-out infinite;
+    color: #fff;
+}
+
+.subtitle-container {
+    position: relative;
+    overflow: hidden;
+    margin: .5rem 0;
+    height: 1.8rem;
+}
+
+.delay-1 {
+    animation-delay: 0s;
+}
+
+.delay-2 {
+    animation-delay: 2s;
+}
+
+.delay-3 {
+    animation-delay: 4s;
+}
+
+.delay-4 {
+    animation-delay: 6s;
+}
+
+.delay-5 {
+    animation-delay: 8s;
+}
+
+.scroller {
+    padding-bottom: 1rem;
+}
+
+.arrows {
+	width: 2rem;
+    height: 2.5rem;
+}
+
+.arrows path {
+	stroke: #FFF;
+	fill: transparent;
+	stroke-width: 0.1rem;	
+	animation: arrow 2s infinite;
+	-webkit-animation: arrow 2s infinite;
+}
+
+@keyframes arrow
+{
+    0% {opacity:0}
+    40% {opacity:1}
+    80% {opacity:0}
+    100% {opacity:0}
+}
+@-webkit-keyframes arrow
+{
+    0% {opacity:0}
+    40% {opacity:1}
+    80% {opacity:0}
+    100% {opacity:0}
+}
+
+.arrows path.a1 {
+	animation-delay:-1s;
+	-webkit-animation-delay:-1s;
+}
+
+.arrows path.a2 {
+	animation-delay:-0.5s;
+	-webkit-animation-delay:-0.5s;
+}
+
+.arrows path.a3 {	
+	animation-delay:0s;
+	-webkit-animation-delay:0s;
+}
+
+.a-media {
+    font-size: 1.25rem;
+    color: #1d2330;
+}
+
+.a-media:hover {
+    color: #FFF;
+}
+/* END - Home */
+
+/* START - Code Block */
+.blinker {
+    width: .5rem;
+    height: 1.1rem;
+    margin-bottom: 0.1rem;
+    background-color: #FFF;
+	animation: blink 1s infinite;
+	-webkit-animation: blink 1s infinite; 
+}
+
+.code-space {
+    margin-top: .3rem;
+    margin-left: .2rem;
+}
+
+@keyframes blink
+{
+    0% {opacity:1}
+    20% {opacity:1}
+    50% {opacity:0}
+    80% {opacity:1}
+    100% {opacity:1}
+}
+@-webkit-keyframes blink
+{
+    0% {opacity:1}
+    20% {opacity:1}
+    50% {opacity:0}
+    80% {opacity:1}
+    100% {opacity:1}
+}
+/* END - Code Block */
+
+
+/* START - About */
+.button-resume {
+    vertical-align: middle;
+    border-radius: 0.25rem;
+    background-color: #20c997;
+    border: none;
+    color: #1d2330;
+    text-align: center;
+    font-size: 1.2rem;
+    width: 10rem;
+    padding: 0.2rem 1.5rem;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 0.5rem 0;
+}
+/* END - About */
+
+/* START - SKILLS */
+.skill-title {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.parent-donut-shade {
+    display: flex;
+    position:absolute;
+    mix-blend-mode: multiply;
+}
+
+.parent-donut {
+    display: flex;
+    mix-blend-mode: lighten;
+}
+
+.progress-donut {
+    --percentage : 0;
+    position: relative;
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: conic-gradient(#1dc997 calc(var(--percentage)*3.6deg), #000 0deg);
+}
+
+.progress-donut::before {
+    content: "";
+    position: absolute;
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    background: #000;
+}
+
+.progress-donut-content {
+    position: relative;
+}
+
+.progress-donut-shade {
+    position: relative;
+    height: 8.4rem;
+    width: 8.4rem;
+    background: conic-gradient(#aaa 0deg, #aaa 0deg);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress-donut-shade::before {
+    content: "";
+    position: absolute;
+    height: 5.6rem;
+    width: 5.6rem;
+    border-radius: 50%;
+    background: #fff;
+}
+/* END - SKILLS */
+
+/* START - Qualifications */
+.qual_title {
+    color: #20c997;
+    background: #1d2330AA;
+    padding: .5rem .5rem;
+    border-radius: .5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-top: 1.5rem;
+}
+
+.qual_content {
+    min-height: 9.5rem;
+}
+
+.qual_content_right {
+    text-align: end;
+}
+
+.qual_content_subsubtitle {
+    font-size: .85rem;
+}
+/* END - Qualifications */
+
+/* START - Projects */
+.bg-card {
+    background: #1d2330AA;
+    border: .5rem solid transparent;
+}
+
+.bg-card-header {
+    background: #20c997;
+    color: #000;
+}
+
+.btn-project {
+    padding: .25rem .5rem;
+    font-size: .7rem;
+    border-radius: 5rem;
+    font-weight: 500;
+    background: #1d2330;
+    color: #FFF;
+}
+
+.card-body {
+    text-align: justify;
+}
+
+.card-text {
+    min-height: 10rem;
+}
+/* END - Projects */
+
+
+/* START - Pet Projects */
+.btn-active {
+    color: #1d2330;
+    background-color: #20c997;
+    border-bottom: 0;
+    border-top: 0;
+    border-radius: 0;
+}
+
+.btn-inactive {
+    color: #fff;
+    background-color: #1d2330AA;
+    border-bottom: 0.5px solid #1d233088;
+    border-top: 0.5px solid #1d233088;
+    border-radius: 0;
+}
+
+iframe { display:block; }
+
+.interactive {
+    font-weight:200;
+    padding-right:0.25rem;
+    font-size: 0.6rem;
+}
+
+.bbl {
+    border-bottom-left-radius: .5rem;
+}
+
+.btl {
+    border-top-left-radius: .5rem;
+}
+
+#PPQN {
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+}
+/* END - Pet Projects */
+
+@media (max-width: 360px) {
+    .section-title {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .col-sm-3, col-sm {
+        padding-bottom: 2rem;
+    }
+
+    .bbl {
+        border-radius: 0;
+    }
+
+    .btl {
+        border-top-left-radius: .5rem;
+        border-top-right-radius: .5rem;
+    }
+
+    #PPQN {
+        border-radius: 0;
+        border-bottom-left-radius: .5rem;
+        border-bottom-right-radius: .5rem;
+    }
+
+    #dufj {
+        height: 80vh;
+    }
+}
+
+/* START - Certificates */
+.cert-card {
+    background: #1d2330AA;
+}
+
+.cert-img {
+    height: auto;
+    width: 100%;
+    border-radius: 0.25rem;
+}
+
+.cert-subtitle {
+    font-size: 0.9rem;
+    padding: 0.1rem 0.5rem 0.1rem 0;
+    font-weight: 400;
+}
+
+a {
+            color: white; /* Default link color */
+            text-decoration: none; /* Remove underline */
+        }
+    
+        a:hover {
+            color: #dcdcdc; /* Darker shade on hover */
+            text-decoration: underline; /* Add underline on hover */
+        }
+
+
+
+
+/* END - Certificates */
