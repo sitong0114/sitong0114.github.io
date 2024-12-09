@@ -4,23 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="Cache-Control" content="max-age=604800"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Personal Website">
+    <meta name="description" content="Personal Website">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <!-- <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' /> -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    <link rel="stylesheet" href="">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
-    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-X30D5QPRET"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);
+    function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-X30D5QPRET');
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation"></script>
     <title>TabPy</title>
 </head>
 <body id="DWQo" class="font-sans">
@@ -46,6 +44,10 @@
                     <li class="nav-item">
                         <a id="ZQJw" class="navbar-a-active nav-link" onclick="selectDeselectNavBar(this.id)" href="#">
                             Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="N2nK" class="navbar-a nav-link" onclick="selectDeselectNavBar(this.id)" href="#charts">
+                            Quick Check</a>
                     </li>
                     <li class="nav-item">
                         <a id="N2nK" class="navbar-a nav-link" onclick="selectDeselectNavBar(this.id)" href="#projects">
@@ -138,7 +140,168 @@ While Tableau excels at visualizing data, it can have limitations with advanced 
         </div>
     </div>
 
+    <div id="charts" class="container section-padding">
+        <div class="font-digital d-flex align-items-center">
+            <div class="h2 section-title">/Chart</div>
+        </div>
 
+<div id="bubble-chart-container" style="margin: 50px auto; width: 80%;">
+            <canvas id="bubbleChart"></canvas>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+         const ctx = document.getElementById('bubbleChart').getContext('2d');
+
+    const data = {
+      datasets: [
+        {
+          label: 'Academic and Educational Roles',
+          data: [
+            { x: -0.1, y: 0.9, r: 10, name: 'Professor' },
+            { x: -0.1, y: 0.7, r: 12, name: 'Students' },
+            { x: -0.3, y: -0.3, r: 12, name: 'Students' }
+          ],
+          backgroundColor: 'rgba(255, 99, 132, 0.6)'
+        },
+        {
+          label: 'Corporate and Technology Roles',
+          data: [
+            { x: 0.8, y: 0.9, r: 10, name: 'AI Solutions Leader' },
+            { x: 0.7, y: 0.8, r: 12, name: 'Reporting Architect' },
+            { x: 0.9, y: 0.8, r: 14, name: 'Product Manager' }
+          ],
+          backgroundColor: 'rgba(54, 162, 235, 0.6)'
+        },
+        {
+          label: 'Data and Analytics Professionals',
+          data: [
+            { x: 0.1, y: 0.7, r: 12, name: 'Data Scientist' },
+            { x: 0.2, y: 0.8, r: 14, name: 'Data Engineer' }
+          ],
+          backgroundColor: 'rgba(75, 192, 192, 0.6)'
+        },
+        {
+          label: 'Operations and Management',
+          data: [
+            { x: 0.8, y: -0.8, r: 10, name: 'Operations Manager' },
+            { x: 0.7, y: -0.9, r: 12, name: 'Banker' }
+          ],
+          backgroundColor: 'rgba(255, 206, 86, 0.6)'
+        }
+      ]
+    };
+
+    const config = {
+      type: 'bubble',
+      data: data,
+      options: {
+        responsive: true,
+        plugins: {
+          title: {
+            display: true,
+            text: 'Cross-Quadrant Bubble Chart with Example Roles',
+            font: {
+              size: 20,
+              weight: 'bold'
+            },
+            color: 'white'
+          },
+                          legend: {
+                    labels: {
+                        color: 'white',
+                        font: {
+                            weight: 'bold'
+                        }
+                    }
+                },
+
+          tooltip: {
+            callbacks: {
+              label: (context) => {
+                const { x, y, r, name } = context.raw;
+                return `${name} (X: ${x.toFixed(1)}, Y: ${y.toFixed(1)}, Radius: ${r})`;
+              }
+            }
+          },
+          annotation: {
+            annotations: {
+              exampleLabels: data.datasets.flatMap((dataset) =>
+                dataset.data.map((point) => ({
+                  type: 'label',
+                  xValue: point.x,
+                  yValue: point.y,
+                  content: point.name,
+                  color: 'white',
+                  font: { size: 12 },
+                  textAlign: 'center',
+                  position: 'top'
+                }))
+              )
+            }
+          }
+        },
+        scales: {
+          x: {
+            title: {
+              display: true,
+              text: 'Business Axis',
+              font: {
+                size: 18,
+                weight: 'bold'
+              },
+              color : 'white'
+            },
+            min: -1,
+            max: 1,
+            grid: {
+              drawBorder: false,
+              color: (context) => (context.tick.value === 0 ? '#000' : '#ccc'),
+            },
+            ticks: {
+              font: {
+                size: 14,
+                weight: 'bold'
+              },
+                color:'white',
+              callback: (value) => (value === 0 ? '0' : value.toFixed(1))
+            }
+          },
+          y: {
+            title: {
+              display: true,
+              text: 'Tech Axis',
+              font: {
+                size: 18,
+                weight: 'bold'
+              },
+              color:'white'
+            },
+            min: -1,
+            max: 1,
+            grid: {
+              drawBorder: false,
+              color: (context) => (context.tick.value === 0 ? '#000' : '#ccc'),
+            },
+            ticks: {
+              font: {
+                size: 14,
+                weight: 'bold'
+              },
+                color:'white',
+              callback: (value) => (value === 0 ? '0' : value.toFixed(1))
+            }
+          }
+        }
+      }
+    };
+
+    new Chart(ctx, config);
+    </script>
+
+</div>
+    
     <!-- PROJECTS -->
     <div id="projects" class="container section-padding">
         <div class="font-digital d-flex align-items-center">
