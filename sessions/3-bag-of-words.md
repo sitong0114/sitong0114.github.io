@@ -13,4 +13,4 @@ TBD
 ### Notes / Slides
 - TBD
 
-[← Back to schedule](../schedule.md)
+[← Back to home](../index.md)
