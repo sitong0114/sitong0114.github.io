@@ -8,12 +8,12 @@
 If words or phrases associated with a construct appear in a text, their occurrence or frequency can be used as a proxy for how much the text discusses that construct.
 
 ### Readings
-- Baker, Bloom, and Davis — *Measuring Economic Policy Uncertainty*
-- Hassan et al. — *Firm-Level Political Risk: Measurement and Effects*
-- Hassan et al. — *Sources and Transmission of Country Risk*
-- Campbell et al. — *The Information Content of Mandatory Risk Factor Disclosures in Corporate Filings*
-- Wu — *Text-Based Measure of Supply Chain Risk Exposure*
-- Kalyani, Bloom, Carvalho, Hassan, Lerner, and Tahoun — *The Diffusion of New Technologies*
+- Baker, Bloom, and Davis — *Measuring Economic Policy Uncertainty*: counts newspaper articles where terms for "economy/economic," "uncertainty/uncertain," and a policy-related word all co-occur, and uses that count as the uncertainty index.
+- Hassan et al. — *Firm-Level Political Risk: Measurement and Effects*: searches earnings call transcripts for political bigrams, then checks whether a risk/uncertainty synonym shows up within a fixed word window around each hit.
+- Hassan et al. — *Sources and Transmission of Country Risk*: builds a country-specific dictionary via TF-IDF over country-related documents, searches transcripts for that dictionary, and checks whether "risk" appears nearby within some window.
+- Campbell et al. — *The Information Content of Mandatory Risk Factor Disclosures in Corporate Filings*: runs LDA on the Item 1A (Risk Factors) section of 10-Ks to mine out what topics/words actually show up there.
+- Wu — *Text-Based Measure of Supply Chain Risk Exposure*: starts from seed words, uses BERT embeddings to find semantically similar terms, and expands those seeds into a full dictionary.
+- Kalyani, Bloom, Carvalho, Hassan, Lerner, and Tahoun — *The Diffusion of New Technologies*: extracts bigrams from patents, filters them against COHA and Wikipedia to keep only genuine technology phrases, then searches job postings and earnings calls for those phrases to track diffusion.
 
 ### Notes / Slides
 
