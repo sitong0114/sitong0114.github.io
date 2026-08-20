@@ -1,23 +1,19 @@
-## Chicago Booth Machine Learning (ML) in Finance Reading Group
+## AI x Econ Reading Group
 
-The Chicago Booth Machine Learning in Finance Reading Group is a student-run organization for doctoral students to explore cutting edge topics in the machine learning applications in the academic finance literature.
+An informal, student-run PhD reading group at UT Dallas exploring AI and big data methods for economics and finance research — and how AI/LLM tools can accelerate the research process itself. The goal is to learn together and keep things practical rather than formal.
 
-The group is open to PhD students and faculty.
-- Faculty Organizer: [Stefan Nagel](https://voices.uchicago.edu/stefannagel/)
-- Student Coordinators (2022-23): [Sangmin Oh](https://sangmino.github.io/)
+## Format
 
-## Schedule & Logistics
-Current Schedule: [Spring 2023](2023S.md)
+We meet weekly, alternating biweekly between two tracks:
 
-### Past Sessions
-- [Winter 2023](2023W.md)
-- [Fall 2022](2022F.md)
-- [Spring 2022](2022S.md)
-- [Winter 2022](2022W.md)
-- [Fall 2021](2021F.md)
-- [Spring 2021](2021S.md)
-- [Winter 2021](2020W.md)
-- [Fall 2020](2020F.md)
+### Track 1: AI & Big Data in Econ/Fin
+Tractable, robust methods we can realistically use in our own research — sentiment analysis, topic modeling, textual similarity, and related empirical applications.
+
+### Track 2: AI for Research
+Reproducing papers, tools, and research workflows with the help of AI/LLMs — in the spirit of the [USC Econ AI Workshop](https://github.com/sankalpsharmaa/usc-econ-ai-workshop).
+
+## Schedule
+TBD — meeting day, time, and location to be announced.
 
 ## Resources
 
@@ -27,7 +23,7 @@ Current Schedule: [Spring 2023](2023S.md)
 - [How to avoid machine learning pitfalls](https://arxiv.org/pdf/2108.02497.pdf) by Michael A. Lones
 - [Machine Learning for Economists (57750)](https://github.com/ml4econ/lecture-notes-2023/blob/master/README.md#machine-learning-for-economists-57750) by Itamar Caspi
 
-### Natural Langauge Processing
+### Natural Language Processing
 - [Stanford Course](https://web.stanford.edu/class/cs224n/index.html#schedule) on NLP with Deep Learning
 - [Nice overview](https://xcorr.net/2022/05/30/large-language-models-will-change-science) of what can be done with NLP
 - The clearest overview of [how ChatGPT works](https://writings.stephenwolfram.com/2023/02/what-is-chatgpt-doing-and-why-does-it-work/) by Stephen Wolfram
@@ -38,4 +34,4 @@ Current Schedule: [Spring 2023](2023S.md)
 
 ### Econometrics
 - [Causal Inference from ML Perspective](https://www.bradyneal.com/Introduction_to_Causal_Inference-Dec17_2020-Neal.pdf)
-- [Machine Learning for Econometrics](https://drive.google.com/file/d/1L_iervUBKj3RsXHLEGOtAFlyHEHpmyT4/view) by Christophe Gaillac and Jereemy L’Hour
+- [Machine Learning for Econometrics](https://drive.google.com/file/d/1L_iervUBKj3RsXHLEGOtAFlyHEHpmyT4/view) by Christophe Gaillac and Jeremy L'Hour
