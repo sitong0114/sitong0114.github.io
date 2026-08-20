@@ -1,6 +1,6 @@
-## Session 1: Bag-of-Words Method
+## Session 1: [Example Past Topic A]
 
-**Track:** 1 — AI & Big Data in Econ/Fin
+**Track:** 2 — AI for Research
 **Date:** TBD
 **Presenter:** TBD
 
