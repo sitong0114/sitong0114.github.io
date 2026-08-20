@@ -22,5 +22,3 @@ Reproducing papers, tools, and research workflows with the help of AI/LLMs — i
 | Track | 1 — AI & Big Data in Econ/Fin |
 | Topic | Bag-of-Words Method |
 | Details | [Meeting page →](sessions/1-bag-of-words.md) |
-
-See the [full schedule](schedule.md).
