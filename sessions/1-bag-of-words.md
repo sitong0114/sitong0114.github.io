@@ -1,0 +1,16 @@
+## Session 1: Bag-of-Words Method
+
+**Track:** 1 — AI & Big Data in Econ/Fin
+**Date:** TBD
+**Presenter:** TBD
+
+### Overview
+TBD
+
+### Readings
+- TBD
+
+### Notes / Slides
+- TBD
+
+[← Back to schedule](../schedule.md)

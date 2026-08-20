@@ -13,4 +13,14 @@ Tractable, robust methods we can realistically use in our own research — senti
 Reproducing papers, tools, and research workflows with the help of AI/LLMs — in the spirit of the [USC Econ AI Workshop](https://github.com/sankalpsharmaa/usc-econ-ai-workshop).
 
 ## Schedule
+
+**Next Session**
+
+| | |
+|---|---|
+| Session | 1 |
+| Track | 1 — AI & Big Data in Econ/Fin |
+| Topic | Bag-of-Words Method |
+| Details | [Meeting page →](sessions/1-bag-of-words.md) |
+
 See the [full schedule](schedule.md).
