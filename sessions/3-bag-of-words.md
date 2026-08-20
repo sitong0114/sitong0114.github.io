@@ -13,6 +13,7 @@ If words or phrases associated with a construct appear in a text, their occurren
 - Hassan et al. — *Sources and Transmission of Country Risk*
 - Campbell et al. — *The Information Content of Mandatory Risk Factor Disclosures in Corporate Filings*
 - Wu — *Text-Based Measure of Supply Chain Risk Exposure*
+- Kalyani, Bloom, Carvalho, Hassan, Lerner, and Tahoun — *The Diffusion of New Technologies*
 
 ### Notes / Slides
 
@@ -27,6 +28,8 @@ Start with a predefined set of words and count how often they appear.
 Use combinations of words, such as bigrams or trigrams, to capture more local context.
 
 **Example:** Hassan et al. — *Firm-Level Political Risk: Measurement and Effects*
+
+**Example:** Kalyani et al. — *The Diffusion of New Technologies*. Represents every patent as its set of bigrams (kept because "autonomous vehicle" or "cloud computing" are far less ambiguous than the unigrams "vehicle" or "cloud"), then narrows 17 million candidate bigrams down to a clean list of technology phrases through successive filters — see #4 below for how.
 
 #### 3. TF-IDF
 Some words appear everywhere and therefore contain little information.
@@ -45,6 +48,8 @@ Example: Campbell et al. — *The Information Content of Mandatory Risk Factor D
 
 **External Training Corpus** — Use texts already known to represent a construct and identify characteristic words or phrases.
 Example: *Sources and Transmission of Country Risk*
+
+Example: Kalyani et al. — *The Diffusion of New Technologies* stacks two external corpora as sequential filters on patent bigrams: (1) the *Corpus of Historical American English* (pre-1970 text) removes bigrams that aren't actually novel, and (2) Wikipedia is used to keep only the bigrams matched to a page that reads as a technology (sections like "application," "device," "technical") rather than a problem or management term (sections like "symptoms," "risk assessment," "customer"). ~17M candidate bigrams → 1,899 technology phrases. A good illustration of chaining external corpora rather than relying on one dictionary.
 
 **Embeddings** — Start with seed words and use semantic similarity to expand the dictionary.
 Example: Wu — *Text-Based Measure of Supply Chain Risk Exposure*
