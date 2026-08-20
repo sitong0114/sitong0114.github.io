@@ -23,6 +23,15 @@ Reproducing papers, tools, and research workflows with the help of AI/LLMs — i
 | Topic | Bag-of-Words Method |
 | Details | [Meeting page →](sessions/3-bag-of-words.md) |
 
+**Following Session**
+
+| | |
+|---|---|
+| Session | 4 |
+| Track | 2 — AI for Research |
+| Topic | AI Agents for Empirical Research |
+| Details | [Meeting page →](sessions/4-ai-agents-for-empirical-research.md) |
+
 **Past Sessions**
 - Session 2: [\[Example Past Topic B\]](sessions/2-example-topic-b.md) — Track 1
 - Session 1: [\[Example Past Topic A\]](sessions/1-example-topic-a.md) — Track 2
