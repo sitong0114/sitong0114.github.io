@@ -13,7 +13,7 @@ Tractable, robust methods we can realistically use in our own research — senti
 Reproducing papers, tools, and research workflows with the help of AI/LLMs — in the spirit of the [USC Econ AI Workshop](https://github.com/sankalpsharmaa/usc-econ-ai-workshop).
 
 ## Schedule
-TBD — meeting day, time, and location to be announced.
+See the [full schedule](schedule.md).
 
 ## Resources
 
