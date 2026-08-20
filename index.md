@@ -4,7 +4,7 @@ An informal, student-run PhD reading group at UT Dallas exploring AI and big dat
 
 ## Format
 
-We meet weekly, alternating biweekly between two tracks:
+We meet once a week, alternating each week between two tracks — one week Textual & Big Data methods, the next week AI for Research:
 
 ### Track 1: AI & Big Data in Econ/Fin
 Tractable, robust methods we can realistically use in our own research — sentiment analysis, topic modeling, textual similarity, and related empirical applications.
