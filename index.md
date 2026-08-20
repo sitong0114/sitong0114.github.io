@@ -1,6 +1,6 @@
 ## AI x Econ Reading Group
 
-An informal, student-run PhD reading group at UT Dallas exploring AI and big data methods for economics and finance research — and how AI/LLM tools can accelerate the research process itself. The goal is to learn together and keep things practical rather than formal.
+An informal, student-run PhD reading group at UT Dallas exploring AI and big data methods for economics and finance research — and how AI/LLM tools can accelerate the research process itself. The goal is to learn together and keep things practical rather than formal. This is mainly for Sitong's personal interest.
 
 ## Format
 
